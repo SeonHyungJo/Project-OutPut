@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<title>회원 검색 페이지입니다.</title>
+	</head>
+
+	
+	<script>
+			function formCheck() {
+			var num = document.getElementById("number").value;
+			if (num > 5 || num<1) {//5보다 크커나 1보다 작으면 경고문 나오는 스크립트
+				alert("존재하지 않는 번호입니다.");
+				return false;}
+			}	
+	</script>
+
+	<body><br><br>
+	<form name="players" action="search_player_array.php" method="POST">
+	
+	<table style="text-align:center" align="center">
+		<tr>
+		<td><h1 align="center"><회원검색></h1>
+		</td>
+		</tr>
+
+		<tr>
+		<td><h3 align="center">회원번호를 입력해주세요<h3>
+		</td>
+		</tr>
+		
+		<tr>
+		<td  style="border:3px; border-style:solid; border-color:green;"><input style="border:0px; text-align:center" type="text" id="number" size="20px" placeholder="001 ~ 005" pattern="[0-9]{3}" name="player" required autofocus>
+		</td>
+		</tr>
+
+		<tr>
+		<td><input type="submit" size="20px" value="검색하기" onclick="return formCheck()">&nbsp &nbsp <input type="reset" size="20px" value="정정하기">
+		</td>
+		</tr>
+	</form>
+
+	<body>
+<html>

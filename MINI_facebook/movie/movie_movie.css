@@ -1,0 +1,12 @@
+#image{
+	width: 100px;
+	height: 150px;
+
+}
+#table, td{
+	border:3px; 
+	border-style: solid; 
+	border-color:#FF4848;
+	border-radius: 5px;
+	text-align: center;
+}

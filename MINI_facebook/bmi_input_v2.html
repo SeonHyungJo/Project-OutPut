@@ -1,0 +1,40 @@
+<html>
+	<head>
+	<title>BMI 계산기</title>
+	</head>
+	
+	
+	<body>
+	
+	<form name="BMI_form" action="bmi_calc_v2.php" method="POST">
+	<table style="height:400px; width: 700px; margin-left: auto; margin-right: auto;">
+		<tr>
+		<td style="color:#EDA900;"><H1>BMI 계산기
+		</td>
+		</tr>
+		
+		<tr>
+		<td style="color:#4FC9DE">신체질량지수(Body Mass Index: BMI, 카우프지수)는 비만도를 즉정하는 지표입니다.<br>
+		BMI를 계산하기 위해서는 체중(kg 단위)과 신장(cm 단위) 값이 필요합니다.<br>
+		귀하의 체중과 신장을 입력하여 주세요
+		</td>
+		</tr>
+		
+		<tr>
+		<td>체중(KG): <input type="number" size="5" name="kg" min="0" required>
+		</td>
+		</tr>
+		
+		<tr>
+		<td>신장(cm): <input type="number" size="10" pattern="[0-9]{3}"  min="0" name="cm" required>
+		</td>
+		</tr>
+		
+		<tr>
+		<td><input type="submit" size="10px" value="제출"> &nbsp &nbsp <input type="reset" size="10px" value="취소">
+		</td>
+		</tr>
+	</form>
+
+	<body>
+<html>

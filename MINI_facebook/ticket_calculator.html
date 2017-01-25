@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<title>영화티켓 비용 계산기</title>
+</head>
+
+<body>
+	<form method="post" action="ticket_calculator.php"name="ticket_calculator_form">
+	<table style="width: 450px; height: 400px; margin-left: auto; margin-right: auto;"cellpadding="2" cellspacing="2">
+	<tbody>
+		<tr align="center">
+		<td style="color:#BD5C24; font-size:40px; font-weight:bold;" colspan="3" rowspan="1">영화티켓 비용 계산기
+		</td>
+		</tr>
+
+		<tr>
+		<td colspan="1" rowspan="4">
+		<img src="./Zootopia.jpg" style="width: 250px; height: 300px;"></img>
+		</td>
+		<td colspan="2" rowspan="1" style="height:50px; text-align:center;" >
+		<p style="font-size:20px; font-weight:bold;">가격표</p>
+		</td>
+		</tr>
+
+		<tr>
+		<td  colspan="2" rowspan="1" style="text-align: center; height: 50px;">	
+			일반
+			10,000원<br>
+			청소년
+			8,000원
+		</td>
+		</tr>
+
+		<tr>
+		<td style="text-align: center; width:10px">일반
+		</td>
+		<td>
+			<table style="border: 3px ; border-style: solid; border-color: #47C83E; margin-left: auto; 
+	margin-right: auto;">
+			<tr><td>
+			<input style="border:0; text-align: center;" min="0" max="99" placeholder="장수" name="num_adult" type="number" size="5px" required autofocus >
+			</td></tr>
+			</table>
+		</td>
+		</tr>
+
+		
+		<tr>
+		<td style="text-align: center;">청소년
+		</td>
+		<td style="text-align: center;">
+			<table style="border:  3px ; border-style: solid; border-color: #47C83E; margin-left: auto; 
+	margin-right: auto;">
+			<tr><td>
+			<input style="border:0; text-align: center;" min="0" max="99" placeholder="장수" name="num_child" type="number" size="5px" required>
+			</td></tr>
+			</table>
+		</td>
+		</tr>
+
+		<tr align="center">
+		<td colspan="3" rowspan="1">
+		<input name="submit" value="비용계산" type="submit"> &nbsp;&nbsp;
+		<input name="cancel" value="취소" type="reset">
+		</td>
+		</tr>
+	</tbody>
+	</table>
+	<br>
+	</form>
+</body>
+</html>
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html><head><title>Hallo SeonHyung's  Movie World</title>
+
+<link rel="stylesheet" type="text/css" href="./movie_layout.css">
+
+
+<meta charset="UTF-8"></head><body>
+    <div id="wrapper">
+        
+        <div id="header">      
+			<p style="text-align:left; color:#FFF; font-weight:bold; font-size:40px; ">CGV</p>
+        </div>
+       
+       
+        <div id="navigation">
+          <ul id="menu-bar">
+			<li><a href="ticket_home.html">홈</a></li>
+			<li><a href="ticket_movie.html">영화</a></li>
+			<li  class="active"><a href="ticket_calculator.html">예매</a></li>
+		</ul>
+        </div>
+        
+       
+		<div id="content" style="text-align: center;">
+		<form method="post" action="ticket_calculator.php"name="ticket_calculator_form">
+			<table style="border:2px; border-style:solid; border-color:#FF4848; border-radius: 10px; width:80%; margin-left:auto; margin-right:auto;">
+			<tr><td colspan="5" rowspan="1" style="border:2px; border-style:solid; border-color:#FF4848; border-radius: 5px; text-align:center; font-weight:bold">*영화선택</td></tr>
+			<tr>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/1.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=140718'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/2.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=130850'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/3.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=124025'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/4.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=136876'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/5.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=134856'" alt="">
+			</td>
+			</tr>
+	
+			<tr>
+			<td>
+			날 보러와요
+			</td>
+			<td>
+			주토피아
+			</td>
+			<td>
+			시간이탈자
+			</td>
+			<td>
+			독수리 에디
+			</td>
+			<td>
+			클로버필드 10번지		
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+			<input type="radio" name="movie" value="1" checked="checked">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="2">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="3">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="4">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="5">			
+			</td>
+			</tr>
+	
+			<tr>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/6.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=109960'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/7.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=17773'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/8.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=113352'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/9.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=94195'" alt="">
+			</td>
+			<td>
+			<img  style="width:100px; height:150px;" src="./image/10.jpg" onclick="location.href='http://movie.naver.com/movie/bi/mi/basic.nhn?code=130983'" alt="">
+			</td>
+			</tr>
+	
+			<tr>
+			<td>
+			배트맨 & 슈퍼맨
+			</td>
+			<td>
+			비포 선라이즈
+			</td>
+			<td>
+			33
+			</td>
+			<td>
+			헌츠맨: 위터스 워
+			</td>
+			<td>
+			트럼보	
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+			<input type="radio" name="movie" value="6">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="7">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="8">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="9">
+			</td>
+			<td>
+			<input type="radio" name="movie" value="10">			
+			</td>
+			</tr>
+			
+			</table><br>
+
+
+
+		<table style="width:400px; height: 200px; margin-left: auto; margin-right: auto;">
+			<tbody>
+				<tr>
+				<td colspan="2" rowspan="1" style="text-align: center;">*관람극장
+				</td>
+				<td style="text-align: center;">
+					<table style="border:  3px ; border-style: solid; border-color: #FF4848; margin-left: auto; margin-right: auto;">
+					<tr><td>
+					<select name="location" style="border:0px; width:135px;">
+						<option selected="selected" value="선택안함">선택안함</option>
+						<option value="왕십리CGV">왕십리CGV</option>
+						<option value="죽전CGV">죽전CGV</option>
+						<option value="오리CGV">오리CGV</option>
+						<option value="광교CGV">광교CGV</option>
+						<option value="서현CGV">서현CGV</option>
+						<option value="명동CGV">명동CGV</option>
+						</select>
+
+					</td></tr>
+					</table>
+				</td>
+				</tr>
+
+				<tr>
+				<td colspan="2" rowspan="1" style="text-align: center;">*관람날짜
+				</td>
+				<td style="text-align: center;">
+					<table style="border:  3px ; border-style: solid; border-color: #FF4848; margin-left: auto; margin-right: auto;">
+					<tr><td>
+					<input style="border:0; text-align: center;"name="date" type="date" size="5px" required>
+					</td></tr>
+					</table>
+				</td>
+				</tr>
+
+
+				<tr>
+				<td colspan="1" rowspan="2" style="text-align: center; width:150px; height:60px;">*관람인원
+				</td>
+
+				<td style="text-align: center; width:150px; height: 30px;">일반/10,000원
+				</td>
+				<td>
+					<table style="border: 3px ; border-style: solid; border-color: #FF4848; margin-left: auto; margin-right: auto; width:145px;">
+					<tr><td>
+					<input style="border:0; text-align: center;" min="0" max="99" placeholder="장수" name="num_adult" type="number" size="5px" required>
+					</td></tr>
+					</table>
+				</td>
+				</tr>
+		
+				
+				<tr>
+				<td style="text-align: center; height: 30px;">청소년/8,000원
+				</td>
+				<td style="text-align: center;">
+					<table style="border:  3px ; border-style: solid; border-color: #FF4848; margin-left: auto; margin-right: auto; width:145px;">
+					<tr><td>
+					<input style="border:0; text-align: center;" min="0" max="99" placeholder="장수" name="num_child" type="number" size="5px" required>
+					</td></tr>
+					</table>
+				</td>
+				</tr>
+		
+				<tr align="center">
+				<td colspan="3" rowspan="1">
+				<input style="background-color:#FF2424; color:#FFF; border:2px ; border-style: solid; border-color: #FFF; border-radius:5px;" name="submit" value="예매하기" type="submit"> &nbsp;&nbsp;
+				<input style="background-color:#FF2424; color:#FFF; border:2px ; border-style: solid; border-color: #FFF; border-radius:5px;" name="cancel" value="취소" type="reset">
+				</td>
+				</tr>
+			</tbody>
+	</table>
+		</form>
+
+		</div>
+      
+        
+        <div id="footer">		
+			<br>Copyright by JoSeonHyung(SHJo@good.com)<br>All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
